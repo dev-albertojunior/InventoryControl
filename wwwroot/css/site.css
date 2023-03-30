@@ -1,4 +1,4 @@
-html {
+﻿html {
   font-size: 14px;
 }
 
@@ -15,4 +15,65 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+/* Estilo para o contêiner principal da tela de login */
+.welcome {
+    position: absolute;
+    width: 364px;
+    height: 96px;
+    left: 538px;
+    top: 208px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+/* Estilo para o formulário de login */
+form {
+    position: absolute;
+    width: 314px;
+    height: 293px;
+    left: 568px;
+    top: 365px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Estilo para as caixas de input */
+input[type="text"], input[type="password"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão de login */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Estilo para o link de registro */
+a {
+    position: absolute;
+    width: 189px;
+    height: 28px;
+    left: 583px;
+    top: 736px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF
 }
