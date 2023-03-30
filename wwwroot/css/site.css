@@ -1,55 +1,74 @@
 ﻿html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
-/* Estilo para o contêiner principal da tela de login */
-.welcome {
+
+/* Definindo o estilo para o corpo da página */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizando a caixa de login */
+.login {
+    width: 400px;
     margin: 0 auto;
-    max-width: 400px;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 5px;
     padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+/* Estilizando o título */
+.login h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Estilo para o formulário de login */
-form {
-    display: flex;
-    flex-direction: column;
+/* Estilizando os inputs */
+.login input[type="text"], .login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
-/* Estilo para as caixas de input */
-input[type="text"], input[type="password"] {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Estilizando o botão de login */
+.login button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-/* Estilo para o botão de login */
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 10px;
+/* Estilizando o texto "dont have account? Register" */
+.login p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
-/* Estilo para o link de registro */
-a {
-    text-align: center;
-    display: block;
-    margin-top: 10px;
+/* Estilizando o link "Register" */
+.login a {
+  color: #4CAF50;
+  text-decoration: none;
 }
