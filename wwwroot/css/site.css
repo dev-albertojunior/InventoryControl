@@ -75,11 +75,9 @@ body {
   text-decoration: none;
 }
 
-
-/* Register Page CSS*/
-
-/* Definindo o estilo para o corpo da página */
-body {
+    /* Register Page CSS*/
+    /* Definindo o estilo para o corpo da página */
+    body {
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
 }
