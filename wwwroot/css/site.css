@@ -74,3 +74,67 @@ body {
   color: #4CAF50;
   text-decoration: none;
 }
+
+
+/* Register Page CSS*/
+
+/* Definindo o estilo para o corpo da página */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilizando a caixa de registro */
+.registration {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* Estilizando o título */
+.registration h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilizando os inputs */
+.registration input[type="text"], .registration input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilizando a caixa de seleção */
+.registration input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Estilizando o texto ao lado da caixa de seleção */
+.registration label {
+  font-size: 14px;
+}
+
+/* Estilizando o botão de registro */
+.registration button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Estilizando a mensagem de erro */
+.registration .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
