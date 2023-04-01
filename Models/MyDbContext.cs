@@ -6,9 +6,10 @@ namespace InventoryControl.Models
     {
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
         {
-                public DbSet<Users> Users { get; set; }
+        }
+                public DbSet<User> Users { get; set; }
                 public DbSet<Authentication> Authentication { get; set; }
         }
 
     }
-}
+

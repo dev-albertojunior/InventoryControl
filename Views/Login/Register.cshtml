@@ -1,15 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Register";
 }
+@model InventoryControl.Models.User
+
 <div class="registration">
     <h1>Create your account</h1>
-    <input type="text" placeholder="Email">
-    <input type="text" placeholder="Full name">
-    <input type="text" placeholder="User">
-    <input type="password" placeholder="Password">
-    <input type="password" placeholder="Confirm Password">
-    <input type="text" placeholder="Company">
-    <input type="text" placeholder="Phone">
-    <label><input type="checkbox">I read and accept the terms and conditions.</label>
-    <button>Register</button>
+    <form method="post" asp-controller="Login" asp-action="Create">
+        <input name="Email" type="text" placeholder="Email" asp-for="Email">
+        <span id="email-error" style="display: none; color: red;">Invalid Email!</span>
+        <input name="FullName" type="text" placeholder="Full name" asp-for="FullName">
+        <input name="UserName" type="text" placeholder="User" asp-for="UserName">
+        <input name="Password" type="password" placeholder="Password" asp-for="Password">
+        <input name="ConfirmPassword" type="password" placeholder="Confirm Password">
+        <input name="Company" type="text" placeholder="Company" asp-for="Company">
+        <input name="Phone" type="text" placeholder="Phone" asp-for="Phone">
+        <label><input type="checkbox">I read and accept the terms and conditions.</label>
+        <button type="submit">Register</button>
+    </form>
 </div>
+<script src="~/js/site.js"></script>
